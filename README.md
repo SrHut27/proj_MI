@@ -2,7 +2,7 @@
 Proposto pelo professor Lucimar de Sasso Vieira, na matéria de Programação em Microinformática na Faculdade de Tecnologia de Rio Preto, o projeto de construção de uma página WEB consiste em levar aos alunos entennder os conceitos, sistemas e ferramentas utilizadas para construir páginas na Internet. Além do mais, o projeto envolve o crecsimento pessoal e profissional dos alunos, pois o coordenador do projeto reforça que os desenvolvedores busquem uma empresa e proponha a essa uma página web, utilizando da teoria passada em sala de aula. 
 
 ###### Equipe
-Coordernador: Professor Sasso Vieira
+Coordernador: Professor Sasso Vieira -   
 Desenvolvedores: Gabriel Henrique Liebana, Gabriel Ribeiro de Freitas e Kaio de Medeiros Gaspar.
 
 ## LANDING PAGE - SOL A SUN
