@@ -1,4 +1,13 @@
 /* Global Styles */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #ccc;
+  --accent-color: #e74c3c;
+  --text-color: #333333;
+  --text-color2: #ffffff;
+  --background-color: rgb(57, 73, 137);
+}
+
 
 * {
   box-sizing: border-box;
@@ -35,13 +44,23 @@ a {
 a:hover {
   color: #23527c;
 }
+.imagemFundo {
+  background-image: linear-gradient(rgba(0, 69, 172, 0.3), rgba(0, 69, 172, 0.3)),
+   url('../images/backgroundImage.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Navigation Menu */
 
 .navbar {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0);
   padding: 10px 20px;
-  border-bottom: 1px solid #444;
+}
+
+.navbar-scrolled {
+  background-color: var(--background-color); /* Cor de fundo quando rolar para baixo */
 }
 
 .navbar-brand {
@@ -65,31 +84,30 @@ a:hover {
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--primary-color);
   transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #ccc;
+  color: var(--secondary-color);
 }
 
 /* Hero Section */
 
 .jumbotron {
-  background-image: linear-gradient(to bottom, #333, #444);
-  background-size: 100% 300px;
-  background-position: 0% 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
 }
 
 .jumbotron h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  
 }
 
 .jumbotron p {
@@ -121,13 +139,14 @@ a:hover {
 }
 
 .carousel-item {
-  height: 500px;
+  width: auto;
+  height: 800px;
   background-color: #f9f9f9;
   padding: 20px;
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;

@@ -1,81 +1,96 @@
-<!-- Navigation menu -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div class="imagemFundo"> 
+    <!-- Navigation menu -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="#" alt="Logo" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
+});
+  </script>
 
-<!-- Hero section -->
-<header class="jumbotron text-center">
-  <h1>Welcome to My Landing Page!</h1>
-  <p>
-    This is a detailed, dynamic, responsive, and animated landing page built
-    with HTML5, CSS3, and Bootstrap.
-  </p>
-  <p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</header>
-
-<!-- Carousel section -->
-<section id="carousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="image1.jpg" class="d-block w-100" alt="Image 1" />
-    </div>
-    <div class="carousel-item">
-      <img src="image2.jpg" class="d-block w-100" alt="Image 2" />
-    </div>
-    <div class="carousel-item">
-      <img src="image3.jpg" class="d-block w-100" alt="Image 3" />
-    </div>
+    <!-- Hero section -->
+    <header class="jumbotron text-center">
+      <h1>Bem-vindo a Sol a Sun Energia Renovável!</h1>
+      <p>
+        Energia solar corresponde à energia proveniente da luz e do calor emitidos pelo Sol. 
+        Essa fonte de energia pode ser aproveitada de forma fotovoltaica ou térmica, gerando energia 
+        elétrica e térmica, respectivamente. Por ser considerada uma fonte de energia limpa, a 
+        energia solar é uma das fontes alternativas mais promissoras para obtenção energética.
+      </p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Quero adquirir</a>
+      </p>
+    </header>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carousel"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carousel"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</section>
+
+    <!-- Carousel section -->
+    <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/761295e165d54639b3b3642ce98083c0.jpg" class="d-block w-100" alt="Image 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/c7e8245556804a0baf99761cad75aef0.jpg" class="d-block w-100" alt="Image 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/cd72e75b93664609a27837d4935a30e2.jpg" class="d-block w-100" alt="Image 3" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
 
 <!-- General information section -->
 <section id="info">
