@@ -29,3 +29,7 @@ O projeto está organizado da seguinte forma:
 └───views
     ├───layouts
     └───index.html
+
++ Server: Contém as configurações, controladores, definições de banco de dados e rotas da aplicação.
++ Styles: Arquivos de estilo CSS para a aplicação.
++ Views: Templates HTML renderizados pelo servidor, incluindo layouts e páginas individuais.
