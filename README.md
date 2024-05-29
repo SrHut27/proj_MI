@@ -1,10 +1,31 @@
-# PROJETO
-Proposto pelo professor Lucimar de Sasso Vieira, na matéria de Programação em Microinformática na Faculdade de Tecnologia de Rio Preto, o projeto de construção de uma página WEB consiste em levar aos alunos entennder os conceitos, sistemas e ferramentas utilizadas para construir páginas na Internet. Além do mais, o projeto envolve o crecsimento pessoal e profissional dos alunos, pois o coordenador do projeto reforça que os desenvolvedores busquem uma empresa e proponha a essa uma página web, utilizando da teoria passada em sala de aula. 
+# Projeto
+Proposto pelo professor Lucimar de Sasso Vieira na disciplina de Programação em Microinformática na Faculdade de Tecnologia de Rio Preto, o projeto de construção de uma página web tem como objetivo proporcionar aos alunos uma compreensão dos conceitos, sistemas e ferramentas utilizados na criação de páginas na Internet. Além disso, o projeto promove o crescimento pessoal e profissional dos alunos, incentivando-os a buscar empresas para as quais possam propor e desenvolver uma página web, aplicando a teoria aprendida em sala de aula.
 
 ###### Equipe
-Coordernador: Professor Sasso Vieira -   
-Desenvolvedores: Gabriel Henrique Liebana, Gabriel Ribeiro de Freitas e Kaio de Medeiros Gaspar.
+Coordenador: Professor Lucimar Sasso Vieira
+Desenvolvedores: Gabriel Henrique Liebana, Gabriel Ribeiro de Freitas, e Kaio de Medeiros Gaspar
 
-## LANDING PAGE - SOL A SUN
-_obs:para realizar o projeto proposto contatamos a empresa SOL A SUN_
-Conheça a empresa de manuteção e instalação de placas e sistemas solares. Além de ser uma empresa sólida no mercado a muitos anos, segue uma proposta fiel com o cliente e sempre busca inovar em seu atendimento e serviço. Entre em contato com o André, líder da empresa.
+### Landing Page - Sol a Sun
+_Obs: Para a realização do projeto, entramos em contato com a empresa Sol a Sun._
+
+Conheça a Sol a Sun, uma empresa especializada na manutenção e instalação de placas e sistemas solares. Com muitos anos de experiência no mercado, a empresa segue uma proposta fiel aos clientes, sempre buscando inovar no atendimento e na qualidade dos serviços prestados. Entre em contato com André, líder da empresa.
+
+## Estrutura
+O projeto foi inspirado na famosa arquitetura MVC (Model, View, Controller), que possui as seguintes características:
+
++ Model: Desenho da estrutura do banco de dados NoSQL;
++ View: Templates que serão oferecidos pelas rotas da aplicação;
++ Controller: Responsável pelo redirecionamento do usuário (rotas), lógica da aplicação, tratamento de dados e erros.
+No entanto, nosso projeto apenas se inspirou na estrutura MVC, pois utilizamos o banco de dados PostgreSQL, que emprega uma linguagem SQL amplamente conhecida. Essa é a principal diferença. Além disso, os controles da aplicação foram divididos em dois arquivos: Routes e Controllers. O primeiro serve para definir as rotas para o usuário, enquanto o segundo trata da lógica da aplicação, dados e erros.
+
+##### Estrutura de Arquivos
+O projeto está organizado da seguinte forma:
+├───server
+│   ├───configs
+│   ├───controllers
+│   ├───database
+│   └───routes
+├───styles
+└───views
+    ├───layouts
+    └───index.html
