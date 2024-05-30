@@ -22,7 +22,7 @@
     <!-- Navigation menu -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="#" alt="Logo" /></a>
+        <a class="navbar-brand" href="#"><img src="public/images/logo.png" alt="Logo" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,24 +61,65 @@
         navbar.classList.remove('navbar-scrolled');
     }
 });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var introLogo = document.querySelector('.intro_logo');
+    if (introLogo) {
+        introLogo.classList.add('active');
+    }
+});
+
+
   </script>
 
-    <!-- Hero section -->
-    <header class="jumbotron text-center">
-      <h1>Bem-vindo a Sol a Sun Energia Renovável!</h1>
-      <p>
-        Energia solar corresponde à energia proveniente da luz e do calor emitidos pelo Sol. 
-        Essa fonte de energia pode ser aproveitada de forma fotovoltaica ou térmica, gerando energia 
-        elétrica e térmica, respectivamente. Por ser considerada uma fonte de energia limpa, a 
-        energia solar é uma das fontes alternativas mais promissoras para obtenção energética.
-      </p>
-      <p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Quero adquirir</a>
-      </p>
-    </header>
-  </div>
 
-    <!-- Carousel section -->
+
+  </div>
+  <main class="jumbotron" >
+    
+  <div class="intro_logo" style="position: relative; width: 100%;">
+
+    <div style="position: absolute; top: 50%; left: 0;   transform: translateY(-50%); width: 50%;">
+      <h1 style="font-size: 4vw;" >Bem-vindo à 
+        <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">
+          <span style="color: yellow;">Sol</span>
+          <span style="color: rgb(105, 175, 255);">a</span>
+          <span style="color: rgb(57, 255, 172);">Sun</span>
+        </span>
+      </h1>
+      <h2 style="font-size: 3vw;">Energia Renovável!</h2>
+      <p style="color: white; font-size: 2vw;">
+        A energia solar é uma fonte limpa e renovável de energia, proveniente da luz e do calor do <span style="color: yellow; font-weight: bold;">sol</span> Sua utilização, seja através da energia fotovoltaica ou térmica, oferece benefícios ambientais significativos, reduzindo as emissões de carbono e promovendo a sustentabilidade. <span style="color: rgb(120, 255, 120);">Investir</span> em energia solar é crucial para um futuro energético sustentável e próspero.
+      </p>
+    </div>
+  
+    <div style="position: absolute; top: 50%; right: 0; width: 50%;">
+      <img src="public/images/logo.png" alt="logo" style="width: 30vw; height: 50vh;">
+    </div>
+   
+   </div>
+  
+
+    
+</main>
+<div class="text-center" style="width: 100%; position: relative;"><h2>
+  <span style="color: gray;">Placa solar é  </span>
+  <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">
+    <span style="color: yellow;">Sol</span>
+    <span style="color: rgb(105, 175, 255);">a</span>
+    <span style="color: rgb(57, 255, 172);">Sun</span>
+  </span>
+  <br>
+  <span style="color: grey;">Instalação de sistemas fotovoltaicos e</span> 
+  <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">
+    <span style="color: yellow;">Sol</span>
+    <span style="color: rgb(105, 175, 255);">a</span>
+    <span style="color: rgb(57, 255, 172);">Sun</span>
+  </span>
+  </h2></div>
+</div>
+
+    <!-- Carousel section 
     <section id="carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -110,7 +151,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </section>
-
+-->
 
 <!-- General information section -->
 <section id="info">
