@@ -15,6 +15,44 @@
     transform: scale(1);
   }
 }
+
+#flex-container {
+  
+}
+
+
+#left-zone {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding-left: 1em; /* Adiciona padding de 1rem nas laterais */
+}
+
+@media (max-width: 860px) {
+  #flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 4em;
+    
+}
+}
+
+@media (max-width: 480px) {
+  #left-zone {
+    max-height: 300px;
+  }
+  #right-zone {
+    max-height: 300px;
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder 500px */
+  }
+
+  .testimonials {
+    max-height: 600px;
+  }
+}
+
 .slider-container {
   position: relative;
   margin: 0 auto;

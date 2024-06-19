@@ -621,7 +621,7 @@ p.testimonialFrom {
 @media (min-width:768px) {
   .header-blue .hero {
     margin-top:60px;
-    text-align:left;
+    
   }
 }
 
@@ -701,7 +701,7 @@ p.testimonialFrom {
   margin: 3em;
   display: flex;
   justify-content: space-evenly;
-  
+  flex-wrap: wrap;
 }
 
 .aboutDiv {
@@ -719,14 +719,50 @@ p.testimonialFrom {
 .aboutDiv p {
   font-size: 1.2em;
 }
+
 .aboutDiv ul li {
   font-size: 1.2em;
 }
 
 .contentUs img {
+  display: flex;
+  align-self: center;
   border-radius: 16px;
   height: 30%;
   width: 30%;
+}
+
+/* Media queries para telas menores */
+@media (max-width: 1000px) {
+  .contentUs {
+    margin: 1.5em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutDiv {
+    width: 100%;
+  }
+
+  .contentUs img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+
+  .aboutDiv h2 {
+    font-size: 2em;
+  }
+
+  .aboutDiv p,
+  .aboutDiv ul li {
+    font-size: 1em;
+  }
+
+  /* Oculta a seção de diferenciais e fornecedores */
+  .diferenciais-fornecedores {
+    display: none;
+  }
 }
 
 
@@ -748,7 +784,7 @@ p.testimonialFrom {
   margin: 30px auto;
   flex-wrap: wrap;
   align-items: center;
-
+  justify-content: center;
 }
 .customer-care,.write-us,.sales-market{
   display: flex;

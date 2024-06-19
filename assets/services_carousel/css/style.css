@@ -1,6 +1,7 @@
 
 .content {
-  padding: 0rem 0; }
+  padding: 0rem 2rem; 
+}
 
 
 .bg-left-half {
@@ -47,3 +48,9 @@
       background: #007bff; }
     .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
       outline: none; }
+
+      @media (max-width: 1000px) {
+        .content {
+          padding: 0rem 1rem;
+        }
+      }

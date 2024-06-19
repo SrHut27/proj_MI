@@ -19,10 +19,10 @@ $(function() {
                   items: 2
                 },
                 1000:{
-                    margin: 20,
+                    margin: 10,
                     stagePadding: 0,
                     nav: true,
-                  items: 3
+                  items: 4
                 }
             }
         });            
